@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".ui.home.NoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tiket.coban_putri_malang.DetailCobanPutriMalangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tiket.coban_putri_malang.CobanPutriMalangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tiket.coban_putri_malang.DashboardCobanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tiket.TiketMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.pantai_malang.DetailPantaiMalangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.pantai_malang.DataPantaiMalangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.coban_rais_malang.DetailRaisMalangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.coban_rais_malang.DataRaisMalangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.pantai_malang.AdminPantaiMalangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.coban_rais_malang.AdminRaisMalangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.BaseWisataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.coban_putri_malang.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.coban_putri_malang.DataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.wisata.coban_putri_malang.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.fragment.dashboard.DetailDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.EditUserActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".onboarding.OnBoardingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+    </application>
+
+</manifest>
